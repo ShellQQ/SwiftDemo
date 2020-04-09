@@ -15,6 +15,7 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("table view")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,6 +25,12 @@ class MainTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        performSegue(withIdentifier: "launchScreen", sender: self)
+        
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -34,7 +41,7 @@ class MainTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "maincell", for: indexPath)
 
         cell.textLabel!.text = tableItems[indexPath.item]
 

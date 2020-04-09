@@ -14,7 +14,11 @@ class LaunchScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         labelAnimation()
     }
     
@@ -28,6 +32,7 @@ class LaunchScreenViewController: UIViewController {
                         self.view.alpha = 0
         }) { (finished) in
             self.dismiss(animated: false)
+            print("dissmiss")
         }
     }
     
