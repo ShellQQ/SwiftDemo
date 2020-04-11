@@ -10,7 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    private let tableItems = ["Core Data", "CollectionView", "AR"]
+    private let tableItems = ["Web", "CollectionView", "AR"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class MainTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        performSegue(withIdentifier: "launchScreen", sender: self)
+        //performSegue(withIdentifier: "launchScreen", sender: self)
         
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -48,6 +48,12 @@ class MainTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextPageName = tableItems[indexPath.item]
+        let nextStoryboard = UIStoryboard(name: nextPageName, bundle: nil)
+        let nextController = nextStoryboard.instantiateViewController(withIdentifier: nextPageName)
+        self.present(nextController, animated: true, completion: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
