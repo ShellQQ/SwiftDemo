@@ -55,7 +55,7 @@ Screen</string>
             </objects>
             <point key="canvasLocation" x="-19" y="656"/>
         </scene>
-        <!--Main Table View Controller-->
+        <!--Main-->
         <scene sceneID="rFp-Gn-hPP">
             <objects>
                 <tableViewController id="hXZ-N7-zbs" customClass="MainTableViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@ Screen</string>
                             <outlet property="delegate" destination="hXZ-N7-zbs" id="OPV-LC-k5L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xZJ-Eo-XVq"/>
+                    <navigationItem key="navigationItem" title="Main" id="xZJ-Eo-XVq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNW-87-nrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

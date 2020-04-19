@@ -51,8 +51,9 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextPageName = tableItems[indexPath.item]
         let nextStoryboard = UIStoryboard(name: nextPageName, bundle: nil)
-        let nextController = nextStoryboard.instantiateViewController(withIdentifier: nextPageName)
-        self.present(nextController, animated: true, completion: nil)
+        let nextController = nextStoryboard.instantiateViewController(withIdentifier: nextPageName+"ViewController")
+//        self.present(nextController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextController, animated: true)
     }
 
     /*
