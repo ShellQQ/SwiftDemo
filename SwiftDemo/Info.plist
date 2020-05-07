@@ -2,8 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Get input movie file</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Save photo and movie files</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Get movie file</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Get input sound</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Save photo and movie files</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

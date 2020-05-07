@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FileManager-->
+        <scene sceneID="HE1-Ev-Chr">
+            <objects>
+                <viewController storyboardIdentifier="FileManagerViewController" id="ZjI-u3-yuL" customClass="FileManagerViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dxH-KR-hdb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4tZ-JO-YMn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="j3W-8d-im6"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="UvN-85-A6l">
+                                <rect key="frame" x="84" y="419" width="246" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mt-wY-0vw">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="RtH-og-PIa"/>
+                                        </constraints>
+                                        <state key="normal" title="下載圖片">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vV-6R-V06">
+                                        <rect key="frame" x="146" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="PgR-Wy-mGR"/>
+                                        </constraints>
+                                        <state key="normal" title="儲存圖片">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSaveButtonDown:" destination="ZjI-u3-yuL" eventType="touchUpInside" id="dnS-9K-eyp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-T0-Sxy">
+                                <rect key="frame" x="145" y="369" width="124" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Wuz-Ak-1eW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CAu-pD-2Nu">
+                                <rect key="frame" x="40" y="474" width="334" height="363"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4tZ-JO-YMn" firstAttribute="top" secondItem="6zM-au-rOz" secondAttribute="top" id="2ce-To-iah"/>
+                            <constraint firstItem="7Dp-T0-Sxy" firstAttribute="top" secondItem="4tZ-JO-YMn" secondAttribute="bottom" constant="25" id="8Tv-f9-C4m"/>
+                            <constraint firstItem="7Dp-T0-Sxy" firstAttribute="leading" secondItem="6zM-au-rOz" secondAttribute="leading" constant="145" id="ANx-vy-j76"/>
+                            <constraint firstItem="UvN-85-A6l" firstAttribute="centerX" secondItem="6zM-au-rOz" secondAttribute="centerX" id="IpG-Ha-4An"/>
+                            <constraint firstItem="4tZ-JO-YMn" firstAttribute="leading" secondItem="6zM-au-rOz" secondAttribute="leading" id="JxC-Gv-cyP"/>
+                            <constraint firstItem="CAu-pD-2Nu" firstAttribute="top" secondItem="UvN-85-A6l" secondAttribute="bottom" constant="25" id="TYR-ik-qw2"/>
+                            <constraint firstItem="UvN-85-A6l" firstAttribute="top" secondItem="7Dp-T0-Sxy" secondAttribute="bottom" constant="25" id="W7N-8U-Mj7"/>
+                            <constraint firstItem="6zM-au-rOz" firstAttribute="trailing" secondItem="7Dp-T0-Sxy" secondAttribute="trailing" constant="145" id="eOF-rF-kVs"/>
+                            <constraint firstItem="6zM-au-rOz" firstAttribute="bottom" secondItem="CAu-pD-2Nu" secondAttribute="bottom" constant="25" id="nX8-O6-8JA"/>
+                            <constraint firstItem="4tZ-JO-YMn" firstAttribute="trailing" secondItem="6zM-au-rOz" secondAttribute="trailing" id="oFu-gy-9nV"/>
+                            <constraint firstItem="6zM-au-rOz" firstAttribute="trailing" secondItem="CAu-pD-2Nu" secondAttribute="trailing" constant="40" id="qYq-WX-yHt"/>
+                            <constraint firstItem="CAu-pD-2Nu" firstAttribute="leading" secondItem="6zM-au-rOz" secondAttribute="leading" constant="40" id="zc1-Cu-TUw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6zM-au-rOz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FileManager" id="1MA-6K-fa7">
+                        <barButtonItem key="backBarButtonItem" title="回到Main" id="qYO-Lg-hrm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="downloadButton" destination="0mt-wY-0vw" id="JES-lg-whs"/>
+                        <outlet property="myImage" destination="4tZ-JO-YMn" id="Oob-wb-LsU"/>
+                        <outlet property="outputText" destination="CAu-pD-2Nu" id="OrS-Zu-Xvv"/>
+                        <outlet property="progressLabel" destination="7Dp-T0-Sxy" id="Pbe-c7-6cj"/>
+                        <outlet property="saveButton" destination="2vV-6R-V06" id="4bP-Gs-4MZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUc-Fj-K0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230.43478260869566" y="60.9375"/>
+        </scene>
+    </scenes>
+</document>
