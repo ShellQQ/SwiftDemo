@@ -10,7 +10,8 @@
     <img src="DemoImages/save.jpg" width="25%" height="25%" />
 * 貝殼型錄：實作CoreData，可新增貝殼資訊，將貝殼資料顯示在UITable中
 
-    <img src="DemoImages/coredata.jpg" width="25%" height="25%" />
+    <img src="DemoImages/coredata.jpg" width="25%" height="25%" />   
+    <img src="DemoImages/addshell.png" width="25%" height="25%" />
 * 照相機：實作AVFoundation，可拍照、錄影、切換前後相機、開啟關閉閃光燈
 
     <img src="DemoImages/camera.jpg" width="25%" height="25%" />
