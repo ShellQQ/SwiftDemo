@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAZ-OV-0hn">
-                                <rect key="frame" x="126" y="391" width="163" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAZ-OV-0hn">
+                                <rect key="frame" x="126" y="390.5" width="162.5" height="115"/>
                                 <string key="text">Launch 
 Screen</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
@@ -29,6 +28,10 @@ Screen</string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gAZ-OV-0hn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="P1a-jA-fVZ"/>
+                            <constraint firstItem="gAZ-OV-0hn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="X15-8q-5lp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

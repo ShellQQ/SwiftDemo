@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801FB722464380200E40508 /* CoreDataDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801FB712464380200E40508 /* CoreDataDemoViewController.swift */; };
+		18026172246A9B2C0087E130 /* Shell+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026170246A9B2C0087E130 /* Shell+CoreDataClass.swift */; };
+		18026173246A9B2C0087E130 /* Shell+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026171246A9B2C0087E130 /* Shell+CoreDataProperties.swift */; };
+		18026176246AA0240087E130 /* SaveImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026175246AA0240087E130 /* SaveImageViewController.swift */; };
+		18026178246AF95F0087E130 /* ShellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026177246AF95F0087E130 /* ShellTableViewCell.swift */; };
+		1802617A246D38450087E130 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026179246D38450087E130 /* RoundedTextField.swift */; };
+		1802617C246D3A810087E130 /* addNewShellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802617B246D3A810087E130 /* addNewShellTableViewController.swift */; };
 		18043F90244DA657003B8E49 /* FileManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18043F8F244DA657003B8E49 /* FileManager.storyboard */; };
 		18043F92244DA67A003B8E49 /* FileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18043F91244DA67A003B8E49 /* FileManagerViewController.swift */; };
 		18043F9424518F9F003B8E49 /* FileManagerToolkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18043F9324518F9F003B8E49 /* FileManagerToolkit.swift */; };
@@ -31,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1801FB712464380200E40508 /* CoreDataDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoViewController.swift; sourceTree = "<group>"; };
+		18026170246A9B2C0087E130 /* Shell+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18026171246A9B2C0087E130 /* Shell+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18026175246AA0240087E130 /* SaveImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageViewController.swift; sourceTree = "<group>"; };
+		18026177246AF95F0087E130 /* ShellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellTableViewCell.swift; sourceTree = "<group>"; };
+		18026179246D38450087E130 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		1802617B246D3A810087E130 /* addNewShellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewShellTableViewController.swift; sourceTree = "<group>"; };
 		18043F8F244DA657003B8E49 /* FileManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileManager.storyboard; sourceTree = "<group>"; };
 		18043F91244DA67A003B8E49 /* FileManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerViewController.swift; sourceTree = "<group>"; };
 		18043F9324518F9F003B8E49 /* FileManagerToolkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerToolkit.swift; sourceTree = "<group>"; };
@@ -67,12 +81,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18026174246A9EB30087E130 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				18026170246A9B2C0087E130 /* Shell+CoreDataClass.swift */,
+				18026171246A9B2C0087E130 /* Shell+CoreDataProperties.swift */,
+			);
+			name = CoreData;
+			path = ../CoreData;
+			sourceTree = "<group>";
+		};
 		18043F8E244DA617003B8E49 /* _FileManager */ = {
 			isa = PBXGroup;
 			children = (
 				18043F8F244DA657003B8E49 /* FileManager.storyboard */,
 				18043F91244DA67A003B8E49 /* FileManagerViewController.swift */,
+				18026175246AA0240087E130 /* SaveImageViewController.swift */,
+				1801FB712464380200E40508 /* CoreDataDemoViewController.swift */,
+				1802617B246D3A810087E130 /* addNewShellTableViewController.swift */,
 				18043F9324518F9F003B8E49 /* FileManagerToolkit.swift */,
+				18026177246AF95F0087E130 /* ShellTableViewCell.swift */,
+				18026179246D38450087E130 /* RoundedTextField.swift */,
 			);
 			path = _FileManager;
 			sourceTree = "<group>";
@@ -98,6 +127,7 @@
 			children = (
 				18FF7E812441FBB1004B4491 /* _Extension */,
 				1804802E243F0261009285CC /* _Scene */,
+				18026174246A9EB30087E130 /* CoreData */,
 				18048019243E0101009285CC /* AppDelegate.swift */,
 				18048023243E0106009285CC /* Assets.xcassets */,
 				18048025243E0106009285CC /* LaunchScreen.storyboard */,
@@ -238,6 +268,13 @@
 				18048031243F02CB009285CC /* MainTableViewController.swift in Sources */,
 				18048022243E0102009285CC /* SwiftDemo.xcdatamodeld in Sources */,
 				1810BBA92462A372007BB351 /* AVFoundationDemoViewController.swift in Sources */,
+				1802617A246D38450087E130 /* RoundedTextField.swift in Sources */,
+				18026173246A9B2C0087E130 /* Shell+CoreDataProperties.swift in Sources */,
+				18026176246AA0240087E130 /* SaveImageViewController.swift in Sources */,
+				18026178246AF95F0087E130 /* ShellTableViewCell.swift in Sources */,
+				1801FB722464380200E40508 /* CoreDataDemoViewController.swift in Sources */,
+				1802617C246D3A810087E130 /* addNewShellTableViewController.swift in Sources */,
+				18026172246A9B2C0087E130 /* Shell+CoreDataClass.swift in Sources */,
 				18048033243F0788009285CC /* LaunchScreenViewController.swift in Sources */,
 				1810BBAD2462B90C007BB351 /* CameraViewController.swift in Sources */,
 				18043F92244DA67A003B8E49 /* FileManagerViewController.swift in Sources */,
