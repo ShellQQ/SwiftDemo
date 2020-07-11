@@ -44,8 +44,8 @@ class CoreDataDemoViewController: UIViewController {
         // 顯示資料實際儲存位置
         print(NSPersistentContainer.defaultDirectoryURL())
         //deleteAllData()
-        inserShellData(family_en: "Nautilidae", family_cn: "鸚鵡螺科", scientificName: "Nautilus pompilius", commonName: "鸚鵡螺", distributed: "印度太平洋區", quantity: 3, size: 15)
-        inserShellData(family_en: "Pleurotomariidae", family_cn: "翁戎螺科", scientificName: "Entemnotrochus rumphii", commonName: "龍宮翁戎螺", distributed: "台灣、日本", quantity: 1, size: 20)
+        //inserShellData(family_en: "Nautilidae", family_cn: "鸚鵡螺科", scientificName: "Nautilus pompilius", commonName: "鸚鵡螺", distributed: "印度太平洋區", quantity: 3, size: 15)
+        //inserShellData(family_en: "Pleurotomariidae", family_cn: "翁戎螺科", scientificName: "Entemnotrochus rumphii", commonName: "龍宮翁戎螺", distributed: "台灣、日本", quantity: 1, size: 20)
         
         shells = queryAllData()
         //queryWithPredicate(with: "鸚")

@@ -10,7 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    private let tableItems = ["Web", "FileManager", "AVFoundationDemo"]
+    private let tableItems = ["Web", "FileManager", "AVFoundationDemo", "UIInterface"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

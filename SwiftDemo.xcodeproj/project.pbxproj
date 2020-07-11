@@ -24,6 +24,12 @@
 		18048027243E0106009285CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18048025243E0106009285CC /* LaunchScreen.storyboard */; };
 		18048031243F02CB009285CC /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18048030243F02CB009285CC /* MainTableViewController.swift */; };
 		18048033243F0788009285CC /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18048032243F0788009285CC /* LaunchScreenViewController.swift */; };
+		180A35ED24B8622200D4B702 /* UIInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180A35EC24B8622200D4B702 /* UIInterface.storyboard */; };
+		180A35F124B8638200D4B702 /* UIInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35F024B8638200D4B702 /* UIInterfaceViewController.swift */; };
+		180A35F924B8BDEB00D4B702 /* WaterFallsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35F824B8BDEB00D4B702 /* WaterFallsFlowLayout.swift */; };
+		180A35FB24B8BE1200D4B702 /* CircularFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35FA24B8BE1200D4B702 /* CircularFlowLayout.swift */; };
+		180A35FE24B8C91500D4B702 /* FlowLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35FD24B8C91500D4B702 /* FlowLayoutDemoViewController.swift */; };
+		180A360224B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A360124B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift */; };
 		1810BBA72462A2C3007BB351 /* AVFoundationDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1810BBA62462A2C3007BB351 /* AVFoundationDemo.storyboard */; };
 		1810BBA92462A372007BB351 /* AVFoundationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810BBA82462A372007BB351 /* AVFoundationDemoViewController.swift */; };
 		1810BBAB2462AED6007BB351 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810BBAA2462AED6007BB351 /* CameraPreviewView.swift */; };
@@ -57,6 +63,12 @@
 		18048028243E0106009285CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18048030243F02CB009285CC /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		18048032243F0788009285CC /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		180A35EC24B8622200D4B702 /* UIInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIInterface.storyboard; sourceTree = "<group>"; };
+		180A35F024B8638200D4B702 /* UIInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInterfaceViewController.swift; sourceTree = "<group>"; };
+		180A35F824B8BDEB00D4B702 /* WaterFallsFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsFlowLayout.swift; sourceTree = "<group>"; };
+		180A35FA24B8BE1200D4B702 /* CircularFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularFlowLayout.swift; sourceTree = "<group>"; };
+		180A35FD24B8C91500D4B702 /* FlowLayoutDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutDemoViewController.swift; sourceTree = "<group>"; };
+		180A360124B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1810BBA62462A2C3007BB351 /* AVFoundationDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AVFoundationDemo.storyboard; sourceTree = "<group>"; };
 		1810BBA82462A372007BB351 /* AVFoundationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationDemoViewController.swift; sourceTree = "<group>"; };
 		1810BBAA2462AED6007BB351 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
@@ -144,6 +156,7 @@
 				188EF62724409AA800D75692 /* _Web */,
 				18043F8E244DA617003B8E49 /* _FileManager */,
 				1810BBA52462A28A007BB351 /* _AVFoundation */,
+				180A35EB24B861E100D4B702 /* UI */,
 			);
 			path = _Scene;
 			sourceTree = "<group>";
@@ -156,6 +169,27 @@
 				18048032243F0788009285CC /* LaunchScreenViewController.swift */,
 			);
 			path = _Main;
+			sourceTree = "<group>";
+		};
+		180A35EB24B861E100D4B702 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				180A35EC24B8622200D4B702 /* UIInterface.storyboard */,
+				180A35F024B8638200D4B702 /* UIInterfaceViewController.swift */,
+				180A35FD24B8C91500D4B702 /* FlowLayoutDemoViewController.swift */,
+				180A360124B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift */,
+				180A35FC24B8BE1A00D4B702 /* _UICollectionViewFlowLayout */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		180A35FC24B8BE1A00D4B702 /* _UICollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				180A35F824B8BDEB00D4B702 /* WaterFallsFlowLayout.swift */,
+				180A35FA24B8BE1200D4B702 /* CircularFlowLayout.swift */,
+			);
+			path = _UICollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 		1810BBA52462A28A007BB351 /* _AVFoundation */ = {
@@ -252,6 +286,7 @@
 				18043F90244DA657003B8E49 /* FileManager.storyboard in Resources */,
 				18048024243E0106009285CC /* Assets.xcassets in Resources */,
 				1804801F243E0102009285CC /* Main.storyboard in Resources */,
+				180A35ED24B8622200D4B702 /* UIInterface.storyboard in Resources */,
 				188EF62924409B2200D75692 /* Web.storyboard in Resources */,
 				1810BBA72462A2C3007BB351 /* AVFoundationDemo.storyboard in Resources */,
 			);
@@ -265,21 +300,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1810BBB124642061007BB351 /* UIImage_Ext.swift in Sources */,
+				180A35F924B8BDEB00D4B702 /* WaterFallsFlowLayout.swift in Sources */,
 				18048031243F02CB009285CC /* MainTableViewController.swift in Sources */,
 				18048022243E0102009285CC /* SwiftDemo.xcdatamodeld in Sources */,
+				180A360224B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift in Sources */,
 				1810BBA92462A372007BB351 /* AVFoundationDemoViewController.swift in Sources */,
 				1802617A246D38450087E130 /* RoundedTextField.swift in Sources */,
+				180A35FB24B8BE1200D4B702 /* CircularFlowLayout.swift in Sources */,
 				18026173246A9B2C0087E130 /* Shell+CoreDataProperties.swift in Sources */,
 				18026176246AA0240087E130 /* SaveImageViewController.swift in Sources */,
 				18026178246AF95F0087E130 /* ShellTableViewCell.swift in Sources */,
 				1801FB722464380200E40508 /* CoreDataDemoViewController.swift in Sources */,
 				1802617C246D3A810087E130 /* addNewShellTableViewController.swift in Sources */,
+				180A35FE24B8C91500D4B702 /* FlowLayoutDemoViewController.swift in Sources */,
 				18026172246A9B2C0087E130 /* Shell+CoreDataClass.swift in Sources */,
 				18048033243F0788009285CC /* LaunchScreenViewController.swift in Sources */,
 				1810BBAD2462B90C007BB351 /* CameraViewController.swift in Sources */,
 				18043F92244DA67A003B8E49 /* FileManagerViewController.swift in Sources */,
 				18043F9424518F9F003B8E49 /* FileManagerToolkit.swift in Sources */,
 				188EF62B2440E7C700D75692 /* WebViewController.swift in Sources */,
+				180A35F124B8638200D4B702 /* UIInterfaceViewController.swift in Sources */,
 				18FF7E832441FBD1004B4491 /* UIView_Ext.swift in Sources */,
 				1810BBAB2462AED6007BB351 /* CameraPreviewView.swift in Sources */,
 				1804801A243E0101009285CC /* AppDelegate.swift in Sources */,
