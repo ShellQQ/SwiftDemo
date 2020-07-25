@@ -13,7 +13,7 @@ class UIInterfaceViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var UIInterfaceTable: UITableView!
     
     //let tableLabels = ["Waterfalls Flow", "Circular Flow", "Cover Flow", "Horizontal Scroll", "Delete Item", "Move Item"]
-    let tableLabels = ["UICollectionView"]
+    let tableLabels = ["WaterFallsFlowLayout", "CircularLayout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

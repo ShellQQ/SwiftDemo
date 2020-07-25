@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18018CC124BDDA1D00CE4139 /* CircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18018CC024BDDA1D00CE4139 /* CircularCollectionViewLayout.swift */; };
 		1801FB722464380200E40508 /* CoreDataDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801FB712464380200E40508 /* CoreDataDemoViewController.swift */; };
 		18026172246A9B2C0087E130 /* Shell+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026170246A9B2C0087E130 /* Shell+CoreDataClass.swift */; };
 		18026173246A9B2C0087E130 /* Shell+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026171246A9B2C0087E130 /* Shell+CoreDataProperties.swift */; };
@@ -14,6 +15,10 @@
 		18026178246AF95F0087E130 /* ShellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026177246AF95F0087E130 /* ShellTableViewCell.swift */; };
 		1802617A246D38450087E130 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026179246D38450087E130 /* RoundedTextField.swift */; };
 		1802617C246D3A810087E130 /* addNewShellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802617B246D3A810087E130 /* addNewShellTableViewController.swift */; };
+		1802988024CB49D80028DF01 /* WaterFallsLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802987F24CB49D80028DF01 /* WaterFallsLayoutViewController.swift */; };
+		1802988324CB4C620028DF01 /* WaterFallsLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802988224CB4C620028DF01 /* WaterFallsLayoutCollectionViewCell.swift */; };
+		1802988524CB4E100028DF01 /* CircularLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802988424CB4E100028DF01 /* CircularLayoutViewController.swift */; };
+		1802988724CB4F7B0028DF01 /* CircularLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802988624CB4F7B0028DF01 /* CircularLayoutCollectionViewCell.swift */; };
 		18043F90244DA657003B8E49 /* FileManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18043F8F244DA657003B8E49 /* FileManager.storyboard */; };
 		18043F92244DA67A003B8E49 /* FileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18043F91244DA67A003B8E49 /* FileManagerViewController.swift */; };
 		18043F9424518F9F003B8E49 /* FileManagerToolkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18043F9324518F9F003B8E49 /* FileManagerToolkit.swift */; };
@@ -27,7 +32,6 @@
 		180A35ED24B8622200D4B702 /* UIInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180A35EC24B8622200D4B702 /* UIInterface.storyboard */; };
 		180A35F124B8638200D4B702 /* UIInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35F024B8638200D4B702 /* UIInterfaceViewController.swift */; };
 		180A35F924B8BDEB00D4B702 /* WaterFallsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35F824B8BDEB00D4B702 /* WaterFallsFlowLayout.swift */; };
-		180A35FB24B8BE1200D4B702 /* CircularFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35FA24B8BE1200D4B702 /* CircularFlowLayout.swift */; };
 		180A35FE24B8C91500D4B702 /* FlowLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A35FD24B8C91500D4B702 /* FlowLayoutDemoViewController.swift */; };
 		180A360224B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A360124B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift */; };
 		1810BBA72462A2C3007BB351 /* AVFoundationDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1810BBA62462A2C3007BB351 /* AVFoundationDemo.storyboard */; };
@@ -44,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18018CC024BDDA1D00CE4139 /* CircularCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCollectionViewLayout.swift; sourceTree = "<group>"; };
 		1801FB712464380200E40508 /* CoreDataDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoViewController.swift; sourceTree = "<group>"; };
 		18026170246A9B2C0087E130 /* Shell+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+CoreDataClass.swift"; sourceTree = "<group>"; };
 		18026171246A9B2C0087E130 /* Shell+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shell+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		18026177246AF95F0087E130 /* ShellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellTableViewCell.swift; sourceTree = "<group>"; };
 		18026179246D38450087E130 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		1802617B246D3A810087E130 /* addNewShellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewShellTableViewController.swift; sourceTree = "<group>"; };
+		1802987F24CB49D80028DF01 /* WaterFallsLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsLayoutViewController.swift; sourceTree = "<group>"; };
+		1802988224CB4C620028DF01 /* WaterFallsLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		1802988424CB4E100028DF01 /* CircularLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLayoutViewController.swift; sourceTree = "<group>"; };
+		1802988624CB4F7B0028DF01 /* CircularLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		18043F8F244DA657003B8E49 /* FileManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileManager.storyboard; sourceTree = "<group>"; };
 		18043F91244DA67A003B8E49 /* FileManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerViewController.swift; sourceTree = "<group>"; };
 		18043F9324518F9F003B8E49 /* FileManagerToolkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerToolkit.swift; sourceTree = "<group>"; };
@@ -66,7 +75,6 @@
 		180A35EC24B8622200D4B702 /* UIInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIInterface.storyboard; sourceTree = "<group>"; };
 		180A35F024B8638200D4B702 /* UIInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInterfaceViewController.swift; sourceTree = "<group>"; };
 		180A35F824B8BDEB00D4B702 /* WaterFallsFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsFlowLayout.swift; sourceTree = "<group>"; };
-		180A35FA24B8BE1200D4B702 /* CircularFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularFlowLayout.swift; sourceTree = "<group>"; };
 		180A35FD24B8C91500D4B702 /* FlowLayoutDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutDemoViewController.swift; sourceTree = "<group>"; };
 		180A360124B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1810BBA62462A2C3007BB351 /* AVFoundationDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AVFoundationDemo.storyboard; sourceTree = "<group>"; };
@@ -101,6 +109,15 @@
 			);
 			name = CoreData;
 			path = ../CoreData;
+			sourceTree = "<group>";
+		};
+		1802988124CB49F60028DF01 /* _Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1802988224CB4C620028DF01 /* WaterFallsLayoutCollectionViewCell.swift */,
+				1802988624CB4F7B0028DF01 /* CircularLayoutCollectionViewCell.swift */,
+			);
+			path = _Cell;
 			sourceTree = "<group>";
 		};
 		18043F8E244DA617003B8E49 /* _FileManager */ = {
@@ -176,9 +193,12 @@
 			children = (
 				180A35EC24B8622200D4B702 /* UIInterface.storyboard */,
 				180A35F024B8638200D4B702 /* UIInterfaceViewController.swift */,
+				1802987F24CB49D80028DF01 /* WaterFallsLayoutViewController.swift */,
+				1802988424CB4E100028DF01 /* CircularLayoutViewController.swift */,
+				180A35FC24B8BE1A00D4B702 /* _UICollectionViewFlowLayout */,
+				1802988124CB49F60028DF01 /* _Cell */,
 				180A35FD24B8C91500D4B702 /* FlowLayoutDemoViewController.swift */,
 				180A360124B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift */,
-				180A35FC24B8BE1A00D4B702 /* _UICollectionViewFlowLayout */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -187,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				180A35F824B8BDEB00D4B702 /* WaterFallsFlowLayout.swift */,
-				180A35FA24B8BE1200D4B702 /* CircularFlowLayout.swift */,
+				18018CC024BDDA1D00CE4139 /* CircularCollectionViewLayout.swift */,
 			);
 			path = _UICollectionViewFlowLayout;
 			sourceTree = "<group>";
@@ -306,21 +326,25 @@
 				180A360224B8D4E000D4B702 /* FlowDemoCollectionViewCell.swift in Sources */,
 				1810BBA92462A372007BB351 /* AVFoundationDemoViewController.swift in Sources */,
 				1802617A246D38450087E130 /* RoundedTextField.swift in Sources */,
-				180A35FB24B8BE1200D4B702 /* CircularFlowLayout.swift in Sources */,
 				18026173246A9B2C0087E130 /* Shell+CoreDataProperties.swift in Sources */,
 				18026176246AA0240087E130 /* SaveImageViewController.swift in Sources */,
 				18026178246AF95F0087E130 /* ShellTableViewCell.swift in Sources */,
+				18018CC124BDDA1D00CE4139 /* CircularCollectionViewLayout.swift in Sources */,
 				1801FB722464380200E40508 /* CoreDataDemoViewController.swift in Sources */,
+				1802988724CB4F7B0028DF01 /* CircularLayoutCollectionViewCell.swift in Sources */,
 				1802617C246D3A810087E130 /* addNewShellTableViewController.swift in Sources */,
 				180A35FE24B8C91500D4B702 /* FlowLayoutDemoViewController.swift in Sources */,
 				18026172246A9B2C0087E130 /* Shell+CoreDataClass.swift in Sources */,
+				1802988524CB4E100028DF01 /* CircularLayoutViewController.swift in Sources */,
 				18048033243F0788009285CC /* LaunchScreenViewController.swift in Sources */,
 				1810BBAD2462B90C007BB351 /* CameraViewController.swift in Sources */,
 				18043F92244DA67A003B8E49 /* FileManagerViewController.swift in Sources */,
 				18043F9424518F9F003B8E49 /* FileManagerToolkit.swift in Sources */,
 				188EF62B2440E7C700D75692 /* WebViewController.swift in Sources */,
 				180A35F124B8638200D4B702 /* UIInterfaceViewController.swift in Sources */,
+				1802988024CB49D80028DF01 /* WaterFallsLayoutViewController.swift in Sources */,
 				18FF7E832441FBD1004B4491 /* UIView_Ext.swift in Sources */,
+				1802988324CB4C620028DF01 /* WaterFallsLayoutCollectionViewCell.swift in Sources */,
 				1810BBAB2462AED6007BB351 /* CameraPreviewView.swift in Sources */,
 				1804801A243E0101009285CC /* AppDelegate.swift in Sources */,
 				188EF62F2441F9BC00D75692 /* ZooTableViewCell.swift in Sources */,

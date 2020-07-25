@@ -1,15 +1,14 @@
 //
-//  FlowDemoCollectionViewCell.swift
+//  WaterFallsLayoutCollectionViewCell.swift
 //  SwiftDemo
 //
-//  Created by Apple on 2020/7/11.
+//  Created by Apple on 2020/7/25.
 //  Copyright © 2020 Nautilus. All rights reserved.
 //
 
 import UIKit
 
-class FlowDemoCollectionViewCell: UICollectionViewCell {
-    
+class WaterFallsLayoutCollectionViewCell: UICollectionViewCell {
     lazy var label: UILabel = {
         let l = UILabel()
         
@@ -18,17 +17,6 @@ class FlowDemoCollectionViewCell: UICollectionViewCell {
         
         return l
     }()
-    
-    override var isSelected: Bool {
-        didSet {
-            if isSelected {
-                
-            }
-            else {
-                
-            }
-        }
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,18 +31,6 @@ class FlowDemoCollectionViewCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
-        super.apply(layoutAttributes)
- 
-        if layoutAttributes is CircularCollectionViewLayoutAttributes {
-            let attributes = layoutAttributes as! CircularCollectionViewLayoutAttributes
-            self.layer.anchorPoint = attributes.anchorPoint
-            self.center.x += (attributes.anchorPoint.x - 0.5) * self.bounds.width
-            // .top, .bottom 位移 r 距離
-            self.center.y += (attributes.anchorPoint.y - 0.5) * self.bounds.height
-        }
     }
     
     func initBackgroundView(color: UIColor) {

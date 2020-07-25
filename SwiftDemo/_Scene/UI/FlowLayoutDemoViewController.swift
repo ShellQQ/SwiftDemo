@@ -10,10 +10,18 @@ import UIKit
 
 class FlowLayoutDemoViewController: UIViewController {
 
-    var waterfallsFlowLayout: WaterFallsFlowLayout!
-    var circularFlowLayout: CircularFlowLayout!
-    
     var collectionView: UICollectionView!
+    
+    
+    
+    lazy var circularFlowLayout: CircularCollectionViewLayout! = {
+        let layout = CircularCollectionViewLayout()
+        //layout.itemSize = CGSize(width: 45, height: 45)
+        //layout.radius = 150
+        layout.direction = .top
+        
+        return layout
+    }()
     
     let cellIdentifier = "flowLayoutCell"
     
@@ -40,6 +48,35 @@ class FlowLayoutDemoViewController: UIViewController {
                     ["text": "20", "color": UIColor(red: 96, green: 125, blue: 143)]
                    ]
     
+    @IBOutlet weak var buttonStack: UIStackView!
+    
+    @IBAction func resetWaterFallLayout(_ sender: UIButton) {
+        if !collectionView.collectionViewLayout.isKind(of: WaterFallsFlowLayout.self) {
+            //changeLayout(layoutType: .waterfalls)
+        }
+    }
+    
+    @IBAction func resetCircularLayout(_ sender: UIButton) {
+        if !collectionView.collectionViewLayout.isKind(of: CircularCollectionViewLayout.self) {
+            //changeLayout(layoutType: .circular)
+        }
+        
+        switch sender.tag {
+        case 0:
+            circularFlowLayout.direction = .top
+        case 1:
+            circularFlowLayout.direction = .bottom
+        case 2:
+            circularFlowLayout.direction = .left
+        case 3:
+            circularFlowLayout.direction = .right
+        default:
+            return
+        }
+        
+        //changeLayout(layoutType: .circular)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,34 +85,46 @@ class FlowLayoutDemoViewController: UIViewController {
     }
     
     private func initCollectionView() {
-        
-        let margin: CGFloat = 8
-        
-        // Flow Layout 初始化
-        // -- WaterFallsFlowLayout
-        waterfallsFlowLayout = WaterFallsFlowLayout()
-        waterfallsFlowLayout.delegate = self
-        waterfallsFlowLayout.numOfColumn = 3
-        waterfallsFlowLayout.minimumLineSpacing = margin
-        waterfallsFlowLayout.minimumInteritemSpacing = margin
-        waterfallsFlowLayout.sectionInset = UIEdgeInsets(top: 0, left: margin, bottom: 0, right: margin)
-        
-        circularFlowLayout = CircularFlowLayout()
-        
+
         // Initial Collection View, 初始設定 WaterFallsFlowLayout
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: waterfallsFlowLayout)
+        //collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: waterfallsFlowLayout)
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: circularFlowLayout)
         
-        //collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.dataSource = self
         
+        //collectionView.backgroundColor = .clear
+        
         // 註冊 Cell
-        //let cellXIB = UINib.init(nibName: "FlowDemoCollectionViewCell", bundle: Bundle.main)
+        //let cellXIB = UINib.init(nibName: cellIdentifier, bundle: Bundle.main)
         //collectionView.register(cellXIB, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.register(FlowDemoCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         
         view.addSubview(collectionView)
+        
+        //collectionView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height - buttonStack.bounds.height - 20)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: buttonStack.topAnchor, constant: -20).isActive = true
     }
     
+    /*func changeLayout(layoutType: FlowLayoutType) {
+        self.collectionView.collectionViewLayout.invalidateLayout()
+        
+        switch layoutType {
+            case .waterfalls:
+                collectionView.setCollectionViewLayout(waterfallsFlowLayout, animated: true)
+            case .circular:
+                collectionView.setCollectionViewLayout(circularFlowLayout, animated: true)
+            default:
+                print("layout type: \(layoutType)")
+        }
+        
+        let indexPath = IndexPath(row: 0, section: 0)
+        self.collectionView.scrollToItem(at: indexPath, at: .top, animated: true)
+    }*/
 
     /*
     // MARK: - Navigation
@@ -89,7 +138,7 @@ class FlowLayoutDemoViewController: UIViewController {
 
 }
 
-extension FlowLayoutDemoViewController: UICollectionViewDataSource {
+extension FlowLayoutDemoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -101,8 +150,9 @@ extension FlowLayoutDemoViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "flowLayoutCell", for: indexPath) as! FlowDemoCollectionViewCell
-        cell.backgroundColor = cellData[indexPath.item]["color"] as? UIColor
-        //cell.initBackgroundView(color: cellData[indexPath.item]["color"] as! UIColor)
+        cell.label.text = cellData[indexPath.item]["text"]! as? String
+        //cell.backgroundColor = cellData[indexPath.item]["color"] as? UIColor
+        cell.initBackgroundView(color: cellData[indexPath.item]["color"] as! UIColor)
         
         return cell
     }
@@ -116,7 +166,7 @@ extension FlowLayoutDemoViewController: WaterfallsFlowLayoutDelegate {
 }
 
 
-enum flowLayoutType {
+enum FlowLayoutType {
     case waterfalls
     case circular
     case cover

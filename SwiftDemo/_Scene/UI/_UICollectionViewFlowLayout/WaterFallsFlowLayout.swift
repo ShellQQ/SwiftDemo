@@ -65,6 +65,8 @@ class WaterFallsFlowLayout: UICollectionViewFlowLayout {
             yArray[minHeightIndex] = attr.frame.maxY
         }
         maxHeight = yArray.max()! + sectionInset.bottom
+        
+        print("yarray: \(yArray)")
     }
 }
 
